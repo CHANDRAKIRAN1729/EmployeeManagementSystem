@@ -1,0 +1,372 @@
+#header{
+  border-bottom: 0.1rem solid #D3D3D3;
+  margin-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+#logo{
+    padding-right: 0px;
+}
+::placeholder{
+  color:#D3D3D3;
+  opacity: 1;
+}
+#filterby{
+  border:none;
+  padding:0px;
+}
+#logoimg{
+    padding: 0 0.3rem 0 0;
+    max-width: 3rem;
+}
+#sicong{
+  width:18px;
+  height:19px;
+  padding-bottom: 4px;
+  padding-right: 2px;
+}
+#bbton{
+  padding:0px;
+  border:0px;
+  background-color: white;
+}
+
+#logotext{
+    padding-left: 0px;
+    font-size: 30px;
+}
+#edir{
+    padding-left: 0px;
+    color: #767676;
+    font-size: 0.8rem;
+}
+.cbut:hover{
+  color:black;
+}
+.filterfont:hover{
+  transform: scale(1.01);
+  color:black;
+}
+#adem{
+    text-align: right;
+}
+.ademp:hover{
+  color:black;
+  transform:scale(1.1);
+}
+#welcome{
+    text-align: right;
+}
+#userimg{
+    text-align: right;
+}
+#wtext{
+    color:#21b8fc;
+    font-size: 1.3rem;
+    padding-right: 0px;
+}
+#wname{
+    text-align: left;
+    padding-left: 0px;
+    font-size: 1.3rem;
+    color: #767676;
+}
+#uimg{
+    max-width: 3.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#dept{
+    padding-top: 1.5rem;
+}
+#office{
+    padding-top: 1.5rem;
+}
+#jobTitle{
+    padding-top: 1.5rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    max-height: 22.85rem;
+    padding-bottom: 5rem;
+    border: 1px solid #a9a9a9;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    overflow-y: auto;
+}
+.cardi{
+    margin:10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #D3D3D3;
+    border:0px;
+    border-radius: 5px;
+}
+.cardi:hover{
+  transform: scale(1.015);
+}
+#idpl{
+    display:none;
+}
+.eimg{
+    max-width: 6rem;
+}
+.filterfont{
+    text-decoration: none;
+    color: #767676;
+    font-size: 15px;
+}
+.ant{
+      font-size: 1rem;
+      margin:0px;
+}
+.imgs{
+    display: flex;
+    justify-content: space-between;
+    gap:1px;
+}
+.xx{
+  max-width: 15px;
+}
+.nant{
+    font-size: 0.8rem;
+    color:#767676;
+    margin:0px;
+}
+.nants{
+    font-size: 0.8rem;
+    color:#767676;
+    margin:0px;
+}
+.edet{
+    display: block;
+    max-width: 9rem;
+    margin-right: 0px;
+}
+#filterfontlast{
+    text-decoration: none;
+    font-size: 15px;
+    color:#21b8fc;
+}
+.alpha{
+    margin-top: 20px;
+    display: inline;
+}
+.context{
+    padding-top: 30px;
+    display: block;
+}
+.btns{
+  background-color: #21b8fc;
+  color: white;
+  border:none;
+  width: 2.225rem;
+  margin-left: 0vw;
+  margin-top: 0.2vw;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.btns:hover{
+  transform: scale(1.2);
+  color:black;
+}
+.search{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 1075px;
+    margin-right: 0px;
+}
+form {
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  width:10rem;
+}
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  font-size: 0.8rem;
+  color: inherit;
+  padding:3px 3px;
+  width:125px;
+}
+.canc{
+  display: flex;
+  justify-content: space-between;
+}
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width:20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+button[type="submit"]:hover {
+  opacity: 1;
+}
+#n1{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+#n2{
+    font-size: 0.8rem;
+}
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+#tx{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cbut{
+    background-color: #32cd32;
+}
+.cbuts{
+    background-color: #32cd32;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+}
+button[type="subm"]{
+    border:none;
+    color: white;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+#prename{
+    border-color: #767676;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+    color: #767676;
+}
+
+#prenames{
+    border-color:color: #767676;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+    color: #767676;
+    animation: blinker 10s linear infinite;
+}
+.loginPopup{
+  color:white;
+  padding:50px;
+  width:100%;
+  background-image: url("C:/Users/ckrav/OneDrive/Documents/Task2/images/bgimg2.png");
+  background-size: 100%;
+  border-radius: 30px;
+}
+.popin{
+  padding-top: 10px;
+  display:flex;
+}
+#addform{
+  position: fixed;
+  left:32%;
+  top:22%;
+  width:500px;
+  border-radius: 30px;
+  display:none;
+}
+.con#bd.active{
+  filter:blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+#empdatapop{
+  border:3px solid green;
+  position: fixed;
+  left:32%;
+  top:42%;
+  width:500px;
+  border-radius: 10px;
+  display: none;
+}
+.container#bd1.active{
+  filter:blur(30px);
+  pointer-events: none;
+  user-select: none;
+}
+.addt{
+  width:100%;
+  border-radius: 5px;
+}
+.ademp{
+    color:white;
+    background-color:#21b8fc;
+    border-radius: 2px;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+@media screen and (max-width:1000px){
+    #empDir{
+        display:none;
+    }
+}
+@media screen and (max-width:720px){
+    #welcome{
+        display:none;
+    }
+}
+
+.popbox{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.1s linear;
+  transform:scale(0);
+}
+.popbox.active{
+  transform:scale(1);
+}
+.popbox .inpbox{
+  padding:10px;
+  position:relative;
+  height:50%;
+  width:50%;
+  background-image: url("C:/Users/ckrav/OneDrive/Documents/Task2/images/bgimg2.png");
+  background-size: cover;
+  /*display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+.popend{
+  display:flex;
+  justify-content: space-between;
+}
+.popout{
+  display: flex;
+}
