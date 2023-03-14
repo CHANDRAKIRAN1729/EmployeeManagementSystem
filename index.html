@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+    <div class="con" id="bd">
+    <div class="container" id="bd1">
+        <div class="row align-items-end" id="header">
+
+            <div class="col-lg-2 col-sm-2 col-10" id="logo">
+                <div class="row">
+                  <div class="col-8" id="logoimg">
+                      <img src="./images/logoimg.png" class="img-fluid" alt="Responsive image">
+                  </div>
+                  <div class="col-4" id="logotext">
+                      <p style="margin:0px;"><b>Saketa</b></p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5" id="empDir" style="padding:0">
+                <div class="row">
+                    <p id="wtext" style="margin:0px;padding:0px;font-size:1.5rem">Employee Directory</p>
+                </div>
+                <div class="row" >
+                    <p <p id="edir" style="margin:0px;">The Ultimate People Directory Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-8" style="padding-right:0px;">
+                <div class="row" id="welcome">
+                    <div class="col-7" id="wtext">
+                        <p style="margin:0px;">Welcome,&nbsp</p>
+                    </div>
+                    <div class="col-5" id="wname">
+                        <p style="margin:0px;">Andrew Philips</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-sm-2 col-2" id="uimg">
+                <img src="./images/userImg.jpg" class="img-fluid" alt="user">
+            </div>
+
+        </div>
+        <div class="row" id="content">
+            <div class="col-lg-2" id="filters">
+                <div class="row rx" id="dept">
+                    <h6>Departments</h6>
+
+                </div>
+                <div class="row ro" id="office">
+                  <h6>Offices</h6>
+
+                </div>
+                <div class="row rf ff" id="jobTitle">
+                  <h6>Job Titles</h6>
+
+                </div>
+            </div>
+            <div class="col-lg-10" id="empdata">
+                <div class="context">
+                  <div class="alpha">
+                      <button type="button" name="#" class="btns" onclick="cardFilter('#')">#</button>
+                  </div>
+                  <div class="search">
+
+                      <div class="col-1">
+                          <p id="tx">Search</p>
+                      </div>
+                      <div class="col-2">
+                          <form id="myform">
+                              <input type="search" name="searchbar" placeholder="Enter any keyword" id="searchspac">
+                              <button type="button" onclick="searchbarc()" id="bbton">
+                                <img src="./images/sicons.png" id="sicong">
+                              </button>
+                          </form>
+                      </div>
+
+                      <div class="col-1">
+                          <button type="subm" class="cbut" onclick="clears()">Clear</button>
+                      </div>
+                      <div class="col-1">
+                          <p id="tx">Filter by</p>
+                      </div>
+                      <div class="col-4">
+                          <form id="filterby">
+                            <select name="prename" id="prename" onchange="seldown()">
+                              <option value="preferredName" selected>-Select-</option>
+                              <option value="name" style="font-weight:bold">&nbsp&nbsp&nbsp&nbsp&nbspEmp Name</option>
+                              <option value="role" style="font-weight:bold">&nbsp&nbsp&nbsp&nbsp&nbspEmp Role</option>
+                              <option value="dept" style="font-weight:bold">&nbsp&nbsp&nbsp&nbsp&nbspEmp Department</option>
+                              <option value="coun" style="font-weight:bold">&nbsp&nbsp&nbsp&nbsp&nbspEmp Country</option>
+
+                            </select>
+                          </form>
+                      </div>
+                      <div class="col-3" id="adem">
+                          <button type="addemp" class="ademp" onclick="popups()">Add Employee</button>
+                      </div>
+                  </div>
+                  <div class="note">
+                      <p><span id="n1">Note : </span><span id="n2">Please use the advanced filter options to refine your results</span></p>
+                  </div>
+                  <div class="cards">
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <form id="addform">
+      <div class="loginPopup">
+        <h5 style="color:black">Enter details of new employee: </h5>
+        <div class="popin">
+          <input type="text" class="addt" placeholder="Enter Name" id="addtn">
+        </div>
+        <p style="font-size:0.8rem;color:red;display:none;margin-bottom:7px;" id="nosub1">Required Field*</p>
+        <div class="popin">
+          <input type="text" class="addt" placeholder="Enter Employee Role" id="addtr">
+        </div>
+        <p style="font-size:0.8rem;color:red;display:none;margin-bottom:7px;" id="nosub2">Required Field*</p>
+        <div class="popin">
+          <select class="addt" name="" id="addtd">
+            <option value="default" selected>-select-</option>
+            <option value="HR">HR</option>
+            <option value="IT">IT</option>
+            <option value="UX">UX</option>
+          </select>
+        </div>
+        <p style="font-size:0.8rem;color:red;display:none;margin-bottom:7px;" id="nosub3">Required Field*</p>
+        <div class="popin">
+          <select class="addt" name="" id="addtc">
+            <option value="default" selected>-select-</option>
+            <option value="India">India</option>
+            <option value="Seattle">Seattle</option>
+          </select>
+        </div>
+        <p style="font-size:0.8rem;color:red;display:none;margin-bottom:7px;" id="nosub4">Required Field*</p>
+        <button type="button" class="cbuts" onclick="empdatas()">Submit</button>
+      </div>
+    </form>
+
+    <!--  -->
+
+        <div class="popbox">
+            <div class="inpbox">
+              <div style="display:flex;flex-direction:column;align-items:center">
+                <h2>Employee Details</h2>
+              </div>
+              <div class="popcontent" style="padding-left:20px;">
+
+              </div>
+              <div class="popend">
+                <button class="cbuts" type="text" name="button" style="color:black;background-color: aqua;margin-left:20px;padding-left:10px;padding-right:10px;" id="edits">Edit</button>
+                <button class="cbuts" id="csc" type="text" name="button" style="color:black;margin-left:20px;">submit</button>
+                <button class="cbuts fclose" type="text" name="button" style="color:aqua;background-color:#767676;margin-right:20px;">cancel</button>
+              </div>
+            </div>
+        </div>
+
+    <!-- -->
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
